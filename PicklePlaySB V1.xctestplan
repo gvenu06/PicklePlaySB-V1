@@ -1,0 +1,27 @@
+{
+  "configurations" : [
+    {
+      "id" : "48B787FC-0516-452B-BFB9-29E52F24B0D6",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "locationScenario" : {
+      "identifier" : "London, England",
+      "referenceType" : "built-in"
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:PicklePlaySB V1.xcodeproj",
+      "identifier" : "DC1BA3A52C6B38B40028F50D",
+      "name" : "PicklePlaySB V1"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
