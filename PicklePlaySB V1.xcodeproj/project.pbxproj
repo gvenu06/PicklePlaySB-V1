@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC1BA3AA2C6B38B40028F50D /* PicklePlaySB_V1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BA3A92C6B38B40028F50D /* PicklePlaySB_V1App.swift */; };
+		DC1BA3AC2C6B38B40028F50D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BA3AB2C6B38B40028F50D /* ContentView.swift */; };
+		DC1BA3AE2C6B38BD0028F50D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1BA3AD2C6B38BD0028F50D /* Assets.xcassets */; };
+		DC1BA3B12C6B38BD0028F50D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1BA3B02C6B38BD0028F50D /* Preview Assets.xcassets */; };
+		DC1BA3B82C6B39850028F50D /* FindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BA3B72C6B39850028F50D /* FindView.swift */; };
+		DC1BA3BA2C6B39970028F50D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BA3B92C6B39970028F50D /* ProfileView.swift */; };
+		DC1BA3BC2C6B39A00028F50D /* QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BA3BB2C6B39A00028F50D /* QueueView.swift */; };
+		DC1BA3BE2C6B39B00028F50D /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BA3BD2C6B39B00028F50D /* SplashScreenView.swift */; };
+		DCBEA2B22C741C6A0033FE93 /* LocationRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBEA2B12C741C6A0033FE93 /* LocationRequestView.swift */; };
+		DCBEA2B42C741D120033FE93 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBEA2B32C741D120033FE93 /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC1BA3A62C6B38B40028F50D /* PicklePlaySB V1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PicklePlaySB V1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1BA3A92C6B38B40028F50D /* PicklePlaySB_V1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicklePlaySB_V1App.swift; sourceTree = "<group>"; };
+		DC1BA3AB2C6B38B40028F50D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC1BA3AD2C6B38BD0028F50D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC1BA3B02C6B38BD0028F50D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC1BA3B72C6B39850028F50D /* FindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindView.swift; sourceTree = "<group>"; };
+		DC1BA3B92C6B39970028F50D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		DC1BA3BB2C6B39A00028F50D /* QueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueView.swift; sourceTree = "<group>"; };
+		DC1BA3BD2C6B39B00028F50D /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		DCBEA2B12C741C6A0033FE93 /* LocationRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequestView.swift; sourceTree = "<group>"; };
+		DCBEA2B32C741D120033FE93 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC1BA3A32C6B38B40028F50D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC1BA39D2C6B38B30028F50D = {
+			isa = PBXGroup;
+			children = (
+				DC1BA3A82C6B38B40028F50D /* PicklePlaySB V1 */,
+				DC1BA3A72C6B38B40028F50D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC1BA3A72C6B38B40028F50D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC1BA3A62C6B38B40028F50D /* PicklePlaySB V1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC1BA3A82C6B38B40028F50D /* PicklePlaySB V1 */ = {
+			isa = PBXGroup;
+			children = (
+				DC1BA3A92C6B38B40028F50D /* PicklePlaySB_V1App.swift */,
+				DC1BA3AB2C6B38B40028F50D /* ContentView.swift */,
+				DC1BA3B72C6B39850028F50D /* FindView.swift */,
+				DC1BA3B92C6B39970028F50D /* ProfileView.swift */,
+				DC1BA3BB2C6B39A00028F50D /* QueueView.swift */,
+				DC1BA3BD2C6B39B00028F50D /* SplashScreenView.swift */,
+				DCBEA2B12C741C6A0033FE93 /* LocationRequestView.swift */,
+				DCBEA2B32C741D120033FE93 /* LocationManager.swift */,
+				DC1BA3AD2C6B38BD0028F50D /* Assets.xcassets */,
+				DC1BA3AF2C6B38BD0028F50D /* Preview Content */,
+			);
+			path = "PicklePlaySB V1";
+			sourceTree = "<group>";
+		};
+		DC1BA3AF2C6B38BD0028F50D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DC1BA3B02C6B38BD0028F50D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC1BA3A52C6B38B40028F50D /* PicklePlaySB V1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC1BA3B42C6B38BD0028F50D /* Build configuration list for PBXNativeTarget "PicklePlaySB V1" */;
+			buildPhases = (
+				DC1BA3A22C6B38B40028F50D /* Sources */,
+				DC1BA3A32C6B38B40028F50D /* Frameworks */,
+				DC1BA3A42C6B38B40028F50D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PicklePlaySB V1";
+			productName = "PicklePlaySB V1";
+			productReference = DC1BA3A62C6B38B40028F50D /* PicklePlaySB V1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC1BA39E2C6B38B40028F50D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					DC1BA3A52C6B38B40028F50D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = DC1BA3A12C6B38B40028F50D /* Build configuration list for PBXProject "PicklePlaySB V1" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC1BA39D2C6B38B30028F50D;
+			productRefGroup = DC1BA3A72C6B38B40028F50D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC1BA3A52C6B38B40028F50D /* PicklePlaySB V1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC1BA3A42C6B38B40028F50D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1BA3B12C6B38BD0028F50D /* Preview Assets.xcassets in Resources */,
+				DC1BA3AE2C6B38BD0028F50D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC1BA3A22C6B38B40028F50D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1BA3BA2C6B39970028F50D /* ProfileView.swift in Sources */,
+				DC1BA3AC2C6B38B40028F50D /* ContentView.swift in Sources */,
+				DCBEA2B22C741C6A0033FE93 /* LocationRequestView.swift in Sources */,
+				DC1BA3AA2C6B38B40028F50D /* PicklePlaySB_V1App.swift in Sources */,
+				DCBEA2B42C741D120033FE93 /* LocationManager.swift in Sources */,
+				DC1BA3BC2C6B39A00028F50D /* QueueView.swift in Sources */,
+				DC1BA3B82C6B39850028F50D /* FindView.swift in Sources */,
+				DC1BA3BE2C6B39B00028F50D /* SplashScreenView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DC1BA3B22C6B38BD0028F50D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC1BA3B32C6B38BD0028F50D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC1BA3B52C6B38BD0028F50D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PicklePlaySB V1/Preview Content\"";
+				DEVELOPMENT_TEAM = 8VJ9Y92Z58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codewithchungus.PicklePlaySB-V1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC1BA3B62C6B38BD0028F50D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PicklePlaySB V1/Preview Content\"";
+				DEVELOPMENT_TEAM = 8VJ9Y92Z58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codewithchungus.PicklePlaySB-V1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC1BA3A12C6B38B40028F50D /* Build configuration list for PBXProject "PicklePlaySB V1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC1BA3B22C6B38BD0028F50D /* Debug */,
+				DC1BA3B32C6B38BD0028F50D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC1BA3B42C6B38BD0028F50D /* Build configuration list for PBXNativeTarget "PicklePlaySB V1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC1BA3B52C6B38BD0028F50D /* Debug */,
+				DC1BA3B62C6B38BD0028F50D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC1BA39E2C6B38B40028F50D /* Project object */;
+}
