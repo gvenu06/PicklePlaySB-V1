@@ -15,7 +15,7 @@ struct FindView: View {
     
     
     var body: some View {
-        Map(position: $position){
+        Map(position: $cameraPosition){
             
             Marker("My Loc",systemImage: "person" ,coordinate: .userLocation).foregroundStyle(.red.opacity(0.25))
             
@@ -86,7 +86,7 @@ extension CLLocationCoordinate2D{
 extension MKCoordinateRegion{
     
     static var userRegion: MKCoordinateRegion{
-        return .init(center: .userLocation, latitudinalMeters: 5000, longitudinalMeters: 5000)
+        return .init(center: .userLocation, latitudinalMeters: 7500, longitudinalMeters: 7500)
     }
 }
 #Preview {
