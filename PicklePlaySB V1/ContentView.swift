@@ -8,17 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var locationManager = LocationManager.shared
     var body: some View {
-        /*Group {
-            if locationManager.userLocation == nil{
-                LocationRequestView()
-                }
-            else {
-                Text("Hello, world!")
-                    .padding()
-            }
-        }*/
         TabView{
             FindView()
                 .tabItem{
