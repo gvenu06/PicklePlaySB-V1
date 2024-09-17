@@ -10,7 +10,7 @@ import MapKit
 struct FindView: View {
     @State private var position: MapCameraPosition = .userLocation(fallback: .automatic)
     @State private var cameraPosition:  MapCameraPosition = .region(.userRegion)
-    @State private var courtLocations: [MKMapItem] = []
+    @State private var courtLocations: [MKMapItem] = [] //dont touch
     
     
     
@@ -20,14 +20,14 @@ struct FindView: View {
             Marker("My Loc",systemImage: "person" ,coordinate: .userLocation).foregroundStyle(.red.opacity(0.25))
             
           
-            Marker("Veterans Park",systemImage: "figure.pickleball" ,coordinate: .VeteransParkLoc).tint(.blue)
+            Marker("Veterans Park",systemImage: "figure.pickleball" ,coordinate:  .VeteransParkLoc).tint(.blue) //dont touch
             
-            Marker("Reichler Park",systemImage: "figure.pickleball" ,coordinate: .ReichlerParkLoc).tint(.blue)
+            Marker("Reichler Park",systemImage: "figure.pickleball" ,coordinate: .ReichlerParkLoc).tint(.blue) //dont touch
             
-            Marker("Kingsley Park",systemImage: "figure.pickleball" ,coordinate: .KinglseyParkLoc).tint(.blue)
+            Marker("Kingsley Park",systemImage: "figure.pickleball" ,coordinate: .KinglseyParkLoc).tint(.blue) //dont touch
             
-            Marker("Thompson Park",systemImage: "figure.pickleball" ,coordinate: .ThomopsonParkLoc).tint(.blue)
-            
+            Marker("Thompson Park",systemImage: "figure.pickleball" ,coordinate: .ThomopsonParkLoc).tint(.blue) //dont touch
+            //dont touch
             ForEach(courtLocations, id: \.self) { court in
                 if let location=court.placemark.location?.coordinate {
                     Marker(court.name ?? "Pickleball Court", systemImage: "figure.pickleball", coordinate: location).tint(.blue)
@@ -35,13 +35,14 @@ struct FindView: View {
                 
             }
         }
+        .mapStyle(.standard(elevation: .realistic))
         .onAppear{
             CLLocationManager().requestWhenInUseAuthorization()
-            searchForPickleballCourts()
+            searchForPickleballCourts()//dont touch
         }
     }
     
-    
+    //dont touch this method
     func searchForPickleballCourts() {
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = "pickleball court"
@@ -85,9 +86,9 @@ extension CLLocationCoordinate2D{
 extension MKCoordinateRegion{
     
     static var userRegion: MKCoordinateRegion{
-        return .init(center: .userLocation, latitudinalMeters: 60000, longitudinalMeters: 1000)
+        return .init(center: .userLocation, latitudinalMeters: 5000, longitudinalMeters: 5000)
     }
 }
 #Preview {
     FindView()
-} 
+}
