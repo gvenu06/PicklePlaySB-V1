@@ -1,47 +1,52 @@
 //  FindView.swift
 //  PicklePlaySB V1
 //
-//  Created by ganeshan venu on 8/13/24.
+//  Created by ganeshan venu and chungusdith on 8/13/24.
 //
 
 import SwiftUI
 import MapKit
 
 struct FindView: View {
-    @State private var position: MapCameraPosition = .userLocation(fallback: .automatic)
-    @State private var cameraPosition:  MapCameraPosition = .region(.userRegion)
-    @State private var courtLocations: [MKMapItem] = [] //dont touch
+    @State private var cameraPosition: MapCameraPosition = .automatic // Initialize with automatic or a default
+        @State private var courtLocations: [MKMapItem] = [] // Keep this as is
+        @StateObject private var locationManager = LocationManager() // Use the LocationManager
+
     
-    
-    
-    var body: some View {
-        Map(position: $cameraPosition){
-            
-            Marker("My Loc",systemImage: "person" ,coordinate: .userLocation).foregroundStyle(.red.opacity(0.25))
-            
-          
-            Marker("Veterans Park",systemImage: "figure.pickleball" ,coordinate:  .VeteransParkLoc).tint(.blue) //dont touch
-            
-            Marker("Reichler Park",systemImage: "figure.pickleball" ,coordinate: .ReichlerParkLoc).tint(.blue) //dont touch
-            
-            Marker("Kingsley Park",systemImage: "figure.pickleball" ,coordinate: .KinglseyParkLoc).tint(.blue) //dont touch
-            
-            Marker("Thompson Park",systemImage: "figure.pickleball" ,coordinate: .ThomopsonParkLoc).tint(.blue) //dont touch
-            //dont touch
-            ForEach(courtLocations, id: \.self) { court in
-                if let location=court.placemark.location?.coordinate {
-                    Marker(court.name ?? "Pickleball Court", systemImage: "figure.pickleball", coordinate: location).tint(.blue)
-                }
-                
-            }
-        }
-        .mapStyle(.standard(elevation: .realistic))
-        .onAppear{
-            CLLocationManager().requestWhenInUseAuthorization()
-            searchForPickleballCourts()//dont touch
-        }
-    }
-    
+       var body: some View {
+           Map(position: $cameraPosition) {
+               // User Location Marker
+               Marker("Current Location", systemImage: "person", coordinate: locationManager.region.center)
+                   .foregroundStyle(.red.opacity(0.25))
+               
+               Marker("Veterans Park", systemImage: "figure.pickleball", coordinate: .VeteransParkLoc).tint(.blue)
+               Marker("Reichler Park", systemImage: "figure.pickleball", coordinate: .ReichlerParkLoc).tint(.blue)
+               Marker("Kingsley Park", systemImage: "figure.pickleball", coordinate: .KinglseyParkLoc).tint(.blue)
+               Marker("Thompson Park", systemImage: "figure.pickleball", coordinate: .ThomopsonParkLoc).tint(.blue)
+               
+               ForEach(courtLocations, id: \.self) { court in
+                   if let location = court.placemark.location?.coordinate {
+                       Marker(court.name ?? "Pickleball Court", systemImage: "figure.pickleball", coordinate: location).tint(.blue)
+                   }
+               }
+           }
+           .mapStyle(.standard(elevation: .realistic))
+           .onAppear {
+               searchForPickleballCourts()
+                cameraPosition = .region(
+                   MKCoordinateRegion(center: locationManager.region.center, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+               )
+           }
+           .onReceive(locationManager.$region) { newRegion in
+               let userCoordinate = newRegion.center
+            let distanceThreshold: CLLocationDistance = 200 // meters
+               let currentLocation = locationManager.region.center
+               if CLLocation(latitude: userCoordinate.latitude, longitude: userCoordinate.longitude)
+                   .distance(from: CLLocation(latitude: currentLocation.latitude, longitude: currentLocation.longitude)) > distanceThreshold {
+                   cameraPosition = .region(newRegion)
+               }
+           }
+       }
     //dont touch this method
     func searchForPickleballCourts() {
         let request = MKLocalSearch.Request()
@@ -60,8 +65,8 @@ struct FindView: View {
             courtLocations = response.mapItems
         }
     }
-}
-
+   }
+    
 
 extension CLLocationCoordinate2D{
     static var userLocation: CLLocationCoordinate2D{

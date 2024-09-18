@@ -1,53 +1,37 @@
-//
-//  LocationManager.swift
-//  PicklePlaySB V1
-//
-//  Created by ganeshan venu on 8/19/24.
-//
-
 import CoreLocation
+import SwiftUI
+import MapKit
 
-class LocationManager: NSObject, ObservableObject {
-    private let manager = CLLocationManager()
-    @Published var userLocation: CLLocation?
-    static let shared = LocationManager()
+class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
+    private let locationManager = CLLocationManager()
+    
+    @Published var region = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194), // Default to San Francisco
+        span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+    )
     
     override init() {
         super.init()
-        manager.delegate = self
-        manager.desiredAccuracy=kCLLocationAccuracyBest
-        manager.startUpdatingLocation()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()  // Request permission here
+        locationManager.startUpdatingLocation()  // Start getting user location
     }
     
-    func requestLocation() {
-        manager.requestWhenInUseAuthorization()
+    // This method gets called when the location is updated
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.first else { return }
+        
+        // Update region to the user's current location
+        region = MKCoordinateRegion(
+            center: location.coordinate,
+            span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        )
     }
-}
-
-extension LocationManager: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
     
-        switch status{
-            
-            
-        case .notDetermined:
-            print("DEBUG: NOT DETERMINED")
-        case .restricted:
-            print("DEBUG: NOT DETERMINED")
-        case .denied:
-            print("DEBUG: Dnied")
-        case .authorizedAlways:
-            print("DEBUG: Auth always")
-        case .authorizedWhenInUse:
-            print("DEBUG: Auth when in use")
-        @unknown default:
-            break
+    // Handle any authorization status changes
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        if manager.authorizationStatus == .authorizedWhenInUse || manager.authorizationStatus == .authorizedAlways {
+            manager.startUpdatingLocation()
         }
     }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.last else {return}
-        self.userLocation = location
-    }
-    
 }
