@@ -30,6 +30,9 @@ struct FindView: View {
                    }
                }
            }
+           .mapControls{
+               MapUserLocationButton()
+           }
            .mapStyle(.standard(elevation: .realistic))
            .onAppear {
                searchForPickleballCourts()
