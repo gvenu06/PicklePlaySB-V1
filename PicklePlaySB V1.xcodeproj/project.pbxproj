@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1A0740F2CA37E0E008328F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1A0740E2CA37E0E008328F1 /* GoogleService-Info.plist */; };
+		C1A074122CA380A0008328F1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C1A074112CA380A0008328F1 /* FirebaseAnalytics */; };
+		C1A074142CA380A0008328F1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C1A074132CA380A0008328F1 /* FirebaseAuth */; };
+		C1A0741A2CA380A0008328F1 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C1A074192CA380A0008328F1 /* FirebaseDatabase */; };
 		DC1BA3AA2C6B38B40028F50D /* PicklePlaySB_V1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BA3A92C6B38B40028F50D /* PicklePlaySB_V1App.swift */; };
 		DC1BA3AC2C6B38B40028F50D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BA3AB2C6B38B40028F50D /* ContentView.swift */; };
 		DC1BA3AE2C6B38BD0028F50D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1BA3AD2C6B38BD0028F50D /* Assets.xcassets */; };
@@ -20,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C1A0740E2CA37E0E008328F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DC1BA3A62C6B38B40028F50D /* PicklePlaySB V1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PicklePlaySB V1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1BA3A92C6B38B40028F50D /* PicklePlaySB_V1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicklePlaySB_V1App.swift; sourceTree = "<group>"; };
 		DC1BA3AB2C6B38B40028F50D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,11 +38,18 @@
 		DCBEA2B32C741D120033FE93 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C1A0741B2CA38450008328F1 /* Authentication */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Authentication; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		DC1BA3A32C6B38B40028F50D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A0741A2CA380A0008328F1 /* FirebaseDatabase in Frameworks */,
+				C1A074122CA380A0008328F1 /* FirebaseAnalytics in Frameworks */,
+				C1A074142CA380A0008328F1 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,8 @@
 		DC1BA3A82C6B38B40028F50D /* PicklePlaySB V1 */ = {
 			isa = PBXGroup;
 			children = (
+				C1A0741B2CA38450008328F1 /* Authentication */,
+				C1A0740E2CA37E0E008328F1 /* GoogleService-Info.plist */,
 				DC1BA3A92C6B38B40028F50D /* PicklePlaySB_V1App.swift */,
 				DC1BA3AB2C6B38B40028F50D /* ContentView.swift */,
 				DC1BA3B72C6B39850028F50D /* FindView.swift */,
@@ -100,6 +114,9 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				C1A0741B2CA38450008328F1 /* Authentication */,
+			);
 			name = "PicklePlaySB V1";
 			productName = "PicklePlaySB V1";
 			productReference = DC1BA3A62C6B38B40028F50D /* PicklePlaySB V1.app */;
@@ -129,6 +146,9 @@
 				Base,
 			);
 			mainGroup = DC1BA39D2C6B38B30028F50D;
+			packageReferences = (
+				C1A074102CA380A0008328F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = DC1BA3A72C6B38B40028F50D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -145,6 +165,7 @@
 			files = (
 				DC1BA3B12C6B38BD0028F50D /* Preview Assets.xcassets in Resources */,
 				DC1BA3AE2C6B38BD0028F50D /* Assets.xcassets in Resources */,
+				C1A0740F2CA37E0E008328F1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PicklePlaySB V1/Preview Content\"";
-				DEVELOPMENT_TEAM = 8VJ9Y92Z58;
+				DEVELOPMENT_TEAM = KA8XF7FHF9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please turn on your location for PicklePlaySB to function.";
@@ -326,7 +347,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PicklePlaySB V1/Preview Content\"";
-				DEVELOPMENT_TEAM = 8VJ9Y92Z58;
+				DEVELOPMENT_TEAM = KA8XF7FHF9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please turn on your location for PicklePlaySB to function.";
@@ -370,6 +391,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C1A074102CA380A0008328F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1A074112CA380A0008328F1 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1A074102CA380A0008328F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C1A074132CA380A0008328F1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1A074102CA380A0008328F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C1A074192CA380A0008328F1 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1A074102CA380A0008328F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC1BA39E2C6B38B40028F50D /* Project object */;
 }
