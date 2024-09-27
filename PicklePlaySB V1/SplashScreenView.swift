@@ -13,7 +13,8 @@ struct SplashScreenView: View {
     @State private var opacity = 0.5
     var body: some View {
         if isActive{
-            ContentView()
+            SignInUIView() // CHANGE THIS IF YOU WANT TO GO TO MAIN, this is for authentication
+            //wip -- the ode guyatt
         }
         else {
             ZStack{

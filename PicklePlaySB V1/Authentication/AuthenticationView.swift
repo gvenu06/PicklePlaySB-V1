@@ -21,7 +21,10 @@ struct AuthenticationView: View {
                     .background(Color.blue)
                     .cornerRadius(10)
             }
+            Spacer()
         }
+        .padding()
+        .navigationTitle("Sign In")
     }
 }
 
