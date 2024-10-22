@@ -11,6 +11,8 @@ struct FindView: View {
     @State private var cameraPosition: MapCameraPosition = .automatic // Initialize with automatic or a default
         @State private var courtLocations: [MKMapItem] = [] // Keep this as is
         @StateObject private var locationManager = LocationManager() // Use the LocationManager
+    @State private var selectedCourt: (name: String, coordinate: CLLocationCoordinate2D)?
+    @State private var showingCourtDetail = false
 
     
        var body: some View {

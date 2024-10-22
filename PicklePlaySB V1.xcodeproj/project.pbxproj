@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C12017102CC749EE0076A92D /* QueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C120170F2CC749EE0076A92D /* QueueManager.swift */; };
+		C12017122CC74CF80076A92D /* CourtDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12017112CC74CF80076A92D /* CourtDetailView.swift */; };
+		C12017142CC74DC70076A92D /* TimeSlotButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12017132CC74DC70076A92D /* TimeSlotButton.swift */; };
 		C1A0740F2CA37E0E008328F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1A0740E2CA37E0E008328F1 /* GoogleService-Info.plist */; };
 		C1A074122CA380A0008328F1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C1A074112CA380A0008328F1 /* FirebaseAnalytics */; };
 		C1A074142CA380A0008328F1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C1A074132CA380A0008328F1 /* FirebaseAuth */; };
 		C1A0741A2CA380A0008328F1 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C1A074192CA380A0008328F1 /* FirebaseDatabase */; };
+		C1BD12032CAA666F008005A3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD12022CAA666F008005A3 /* SettingsView.swift */; };
 		DC1BA3AA2C6B38B40028F50D /* PicklePlaySB_V1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BA3A92C6B38B40028F50D /* PicklePlaySB_V1App.swift */; };
 		DC1BA3AC2C6B38B40028F50D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BA3AB2C6B38B40028F50D /* ContentView.swift */; };
 		DC1BA3AE2C6B38BD0028F50D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1BA3AD2C6B38BD0028F50D /* Assets.xcassets */; };
@@ -24,7 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C120170F2CC749EE0076A92D /* QueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueManager.swift; sourceTree = "<group>"; };
+		C12017112CC74CF80076A92D /* CourtDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtDetailView.swift; sourceTree = "<group>"; };
+		C12017132CC74DC70076A92D /* TimeSlotButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotButton.swift; sourceTree = "<group>"; };
 		C1A0740E2CA37E0E008328F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C1BD12022CAA666F008005A3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		DC1BA3A62C6B38B40028F50D /* PicklePlaySB V1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PicklePlaySB V1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1BA3A92C6B38B40028F50D /* PicklePlaySB_V1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicklePlaySB_V1App.swift; sourceTree = "<group>"; };
 		DC1BA3AB2C6B38B40028F50D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,11 +90,15 @@
 				DC1BA3B72C6B39850028F50D /* FindView.swift */,
 				DC1BA3B92C6B39970028F50D /* ProfileView.swift */,
 				DC1BA3BB2C6B39A00028F50D /* QueueView.swift */,
+				C1BD12022CAA666F008005A3 /* SettingsView.swift */,
 				DC1BA3BD2C6B39B00028F50D /* SplashScreenView.swift */,
 				DCBEA2B12C741C6A0033FE93 /* LocationRequestView.swift */,
 				DCBEA2B32C741D120033FE93 /* LocationManager.swift */,
 				DC1BA3AD2C6B38BD0028F50D /* Assets.xcassets */,
 				DC1BA3AF2C6B38BD0028F50D /* Preview Content */,
+				C120170F2CC749EE0076A92D /* QueueManager.swift */,
+				C12017112CC74CF80076A92D /* CourtDetailView.swift */,
+				C12017132CC74DC70076A92D /* TimeSlotButton.swift */,
 			);
 			path = "PicklePlaySB V1";
 			sourceTree = "<group>";
@@ -179,9 +191,13 @@
 				DC1BA3BA2C6B39970028F50D /* ProfileView.swift in Sources */,
 				DC1BA3AC2C6B38B40028F50D /* ContentView.swift in Sources */,
 				DCBEA2B22C741C6A0033FE93 /* LocationRequestView.swift in Sources */,
+				C12017122CC74CF80076A92D /* CourtDetailView.swift in Sources */,
+				C12017102CC749EE0076A92D /* QueueManager.swift in Sources */,
 				DC1BA3AA2C6B38B40028F50D /* PicklePlaySB_V1App.swift in Sources */,
 				DCBEA2B42C741D120033FE93 /* LocationManager.swift in Sources */,
 				DC1BA3BC2C6B39A00028F50D /* QueueView.swift in Sources */,
+				C12017142CC74DC70076A92D /* TimeSlotButton.swift in Sources */,
+				C1BD12032CAA666F008005A3 /* SettingsView.swift in Sources */,
 				DC1BA3B82C6B39850028F50D /* FindView.swift in Sources */,
 				DC1BA3BE2C6B39B00028F50D /* SplashScreenView.swift in Sources */,
 			);

@@ -25,6 +25,13 @@ struct ContentView: View {
                     Image(systemName:"person.circle")
                     Text("Profile")
                 }
+            SettingsView(showSignInView: <#Binding<Bool>#>)
+                .tabItem{
+                    Image(systemName:"magnifyingglass")
+                    Text("Settings")
+                }
+            
+            // showSignInView: SplashScreenView.$showSignInView this should go in settingsview
         }
      
     }

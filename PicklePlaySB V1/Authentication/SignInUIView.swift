@@ -43,6 +43,7 @@ struct SignInUIView: View {
             
             Button{
                 viewModel.signIn()
+                
             }label:{
                 Text("Sign in")
                     .font(.headline)

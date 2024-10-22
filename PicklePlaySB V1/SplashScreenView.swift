@@ -11,9 +11,16 @@ struct SplashScreenView: View {
     @State private var isActive = false;
     @State private var size = 0.8
     @State private var opacity = 0.5
+    @State private var showSignInView: Bool = false
     var body: some View {
         if isActive{
-            SignInUIView() // CHANGE THIS IF YOU WANT TO GO TO MAIN, this is for authentication
+            
+            if(showSignInView){
+                AuthenticationView()
+            }else{
+                ContentView()
+            }
+                // CHANGE THIS IF YOU WANT TO GO TO MAIN, this is for authentication
             //wip -- the ode guyatt
         }
         else {
@@ -31,6 +38,8 @@ struct SplashScreenView: View {
                     .scaleEffect(size)
                     .opacity(opacity)
                     .onAppear{
+                        let authUser = try? AuthenticationManager.shared.getAuthenticatedUser()
+                        self.showSignInView = authUser == nil ? true : false
                         withAnimation(.easeIn(duration: 1.2)){
                             self.size = 0.9
                             self.opacity = 1.0
