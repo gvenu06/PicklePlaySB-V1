@@ -26,5 +26,7 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:146042533166:ios:f189996d9c94be4f51f6bf</string>
+	<key>DATABASE_URL</key>
+	<string>https://pickleplaysb-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>
