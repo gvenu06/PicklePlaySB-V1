@@ -17,7 +17,7 @@
                BlueprintIdentifier = "DC1BA3A52C6B38B40028F50D"
                BuildableName = "PicklePlaySB V1.app"
                BlueprintName = "PicklePlaySB V1"
-               ReferencedContainer = "container:PicklePlaySB V1.xcodeproj">
+               ReferencedContainer = "container:PicklePlaySB.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -51,7 +51,7 @@
             BlueprintIdentifier = "DC1BA3A52C6B38B40028F50D"
             BuildableName = "PicklePlaySB V1.app"
             BlueprintName = "PicklePlaySB V1"
-            ReferencedContainer = "container:PicklePlaySB V1.xcodeproj">
+            ReferencedContainer = "container:PicklePlaySB.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -68,7 +68,7 @@
             BlueprintIdentifier = "DC1BA3A52C6B38B40028F50D"
             BuildableName = "PicklePlaySB V1.app"
             BlueprintName = "PicklePlaySB V1"
-            ReferencedContainer = "container:PicklePlaySB V1.xcodeproj">
+            ReferencedContainer = "container:PicklePlaySB.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
